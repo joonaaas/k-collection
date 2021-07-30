@@ -102,7 +102,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+    {% comment %} {{ 'tailwind.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 
     {%- unless settings.type_body_font.system? -%}
@@ -120,7 +120,7 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 
-    {% section 'announcement-bar' %}
+    {% comment %} {% section 'announcement-bar' %} {% endcomment %}
     {% section 'header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
