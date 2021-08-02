@@ -15,7 +15,7 @@
 @media screen and (min-width: 750px) {
 	.banner {
 		min-height: 72rem;
-		flex-direction: row;
+		flex-direction: column;
 	}
 }
 
@@ -34,6 +34,7 @@
 	top: 0;
 	width: 100%;
 	position: relative;
+	height: 100%;
 }
 
 .banner__media-half {
@@ -102,22 +103,48 @@
 
 @media screen and (min-width: 750px) {
 	.banner__content {
-		padding-bottom: 5rem;
-		padding-top: 5rem;
+		/* padding-bottom: 5rem; */
+		/* padding-top: 1.4rem; */
 	}
 }
 .banner-container__box {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	flex-direction: column;
+	margin-bottom: 4rem;
 }
+
 .banner__box {
-	border: 0;
-	position: relative;
-	height: fit-content;
-	align-items: center;
-	text-align: start;
 	width: 100%;
+}
+
+.banner__image {
+	width: 100%;
+	position: relative;
+	height: 650px;
+}
+
+@media screen and (min-width: 754px) {
+	.banner-container__box {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+	.banner__image {
+		width: 50%;
+		position: relative;
+		height: 650px;
+	}
+	.banner__box {
+		border: 0;
+		position: relative;
+		height: fit-content;
+		align-items: center;
+		text-align: start;
+		width: 50%;
+	}
 }
 
 .banner__box > * + .banner__buttons {
@@ -178,10 +205,6 @@
 }
 
 @media screen and (min-width: 750px) {
-	.banner__box {
-		width: 50%;
-	}
-
 	.banner__box > .banner__buttons:only-child .button {
 		margin-top: 0;
 	}

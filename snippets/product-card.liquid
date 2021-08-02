@@ -102,4 +102,22 @@
       </div>
     </div>
   </a>
+  {% assign product = product_card_product %}
+  {% form "product", product, class: "flex" %}
+    <select name="id" hidden>
+      {% for variant in product.variants %}
+        <option value="{{ variant.id }}"
+          {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+        >
+          {{ variant.title }} - {{ variant.price | money }}
+        </option>
+      {% endfor %}
+    </select>
+    <input type="text" name="quantity" min="1" value="1" hidden>
+    {% if product.available %}
+    <button type="submit" class="button__add-to-cart">Add To Cart</button>
+    {% else %}
+    <button class="button__sold-out" disabled>Sold Out</button>
+    {% endif %}
+  {% endform %}
 </div>

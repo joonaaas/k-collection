@@ -1,0 +1,83 @@
+<style>
+  #Layer_1 {
+    margin-top: -9rem;
+    z-index: 50;
+  }
+  .line-container {
+    position: relative;
+    background-color: #fff;
+  }
+  .hover-yellow:hover {
+    background: #FFFF00;
+  }
+  .category-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  .category-list li {
+    margin: 1rem;
+  }
+  .category-list li a {
+    filter: drop-shadow(0 20px 13px rgba(0, 0, 0, 0.03)) drop-shadow(0 8px 5px rgba(0, 0, 0, 0.08));
+    width: 150px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 754px) {
+    .category-list {
+      position: absolute;
+      transform: translateY(-120%);
+    }
+  }
+  @media screen and (min-width: 1090px) {
+    .category-list {
+      transform: translateY(-130%);
+    }
+    .category-list li {
+      margin: 1.4rem;
+    }
+    .category-list li a {
+      width: 160px;
+    }
+  }
+  @media screen and (min-width: 1226px) {
+    .category-list {
+      transform: translateY(-140%);
+    }
+    .line-container {
+      margin-top: -1rem;
+    }
+  }
+  @media screen and (min-width: 1460px) {
+    .category-list {
+      transform: translateY(-170%);
+    }
+    .category-list li a {
+      width: 180px;
+    }
+  }
+  @media screen and (min-width: 1700px) {
+    .category-list {
+      transform: translateY(-190%);
+    }
+  }
+
+
+
+</style>
+<div class="line-container">
+  <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1906 218.76"><defs><style>.cls-1{fill:#fff;}</style></defs><polygon class="cls-1" points="0 100.71 1522.71 79 1906 0 1906 218.76 0 218.76 0 100.71"/></svg>
+  <ul class="category-list">
+    <li><a href="" class="button button--primary hover-yellow" style="box-shadow: none;">Dresses</a></li>
+    <li><a href="" class="button button--primary hover-yellow" style="box-shadow: none;">Jackets</a></li>
+    <li><a href="" class="button button--primary hover-yellow" style="box-shadow: none;">Trousers</a></li>
+    <li><a href="" class="button button--primary hover-yellow" style="box-shadow: none;">Female Footwear</a></li>
+  </ul>
+</div>

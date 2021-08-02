@@ -237,7 +237,7 @@ html.no-js .no-js-hidden {
 }
 
 .spaced-section {
-	margin-top: 5rem;
+	padding-top: 5rem;
 }
 
 .spaced-section:last-child {
@@ -780,6 +780,7 @@ summary::-webkit-details-marker {
 
 .title-wrapper-with-link .title {
 	margin: 0;
+	color: #000;
 }
 
 .title-wrapper {
@@ -2074,4 +2075,40 @@ details-disclosure > details {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+.background-white {
+	background-color: #ffff;
+}
+
+.flex {
+	display: flex;
+}
+
+.button__add-to-cart {
+	flex-grow: 1;
+	background-color: #fff;
+	border: 2px solid #e5e5e5;
+	outline: none;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	cursor: pointer;
+	font-family: var(--font-heading-family);
+	font-style: var(--font-heading-style);
+}
+
+.button__add-to-cart:hover {
+	background-color: #ffff00;
+	border: 2px solid #ffff00;
+	transition: all 0.3s ease;
+}
+
+.button__sold-out {
+	flex-grow: 1;
+	border: 2px solid #e5e5e5;
+	outline: none;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	font-family: var(--font-heading-family);
+	font-style: var(--font-heading-style);
 }
