@@ -775,7 +775,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-	margin: 3rem 0 2rem;
+	color: black;
 }
 
 .title-wrapper-with-link .title {
@@ -814,11 +814,6 @@ summary::-webkit-details-marker {
 }
 
 @media screen and (min-width: 990px) {
-	.title,
-	.title-wrapper-with-link {
-		margin: 5rem 0 3rem;
-	}
-
 	.title--primary {
 		margin: 2rem 0;
 	}
@@ -2076,7 +2071,7 @@ details-disclosure > details {
 		transform: translateY(0);
 	}
 }
-
+/* Custom */
 .background-white {
 	background-color: #ffff;
 }
@@ -2111,4 +2106,18 @@ details-disclosure > details {
 	margin-top: 2rem;
 	font-family: var(--font-heading-family);
 	font-style: var(--font-heading-style);
+}
+
+.text-black {
+	color: black;
+}
+
+.text-black:hover {
+	color: black;
+}
+
+.feature-wrapper-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
