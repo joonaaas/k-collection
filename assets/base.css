@@ -2121,3 +2121,7 @@ details-disclosure > details {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.margin-top-minus {
+	margin-top: -2rem;
+}
